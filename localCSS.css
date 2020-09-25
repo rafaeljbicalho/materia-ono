@@ -2,3 +2,17 @@
     margin-left: 5%;
     margin-top: 2%;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.lista {
+    margin-left: 29%;
+}
+
+.botao {
+    margin-left: 44%;
+    font-size: 12px !important;
+}
