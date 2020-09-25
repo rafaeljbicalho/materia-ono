@@ -42,7 +42,30 @@
 
     <button class='btn btn-outline-primary botao' onclick="changeBackground()">Alterar background</button>
 
+    <!-- calcular imc -->
+    <div class='inputs'>
+        <!-- peso -->
+        <div class="form-group">
+            <label for="formGroupExampleInput">Peso</label>
+            <input type="number" class="form-control" id="peso" placeholder="Ex: 80kg" required>
+        </div>
+
+        <!-- altura -->
+        <div class="form-group">
+            <label for="formGroupExampleInput">Altura</label>
+            <input type="number" class="form-control" id="altura" placeholder="Ex: 1,75m" required>
+        </div>
+
+        <!-- botão -->
+        <button id="botao" class='btn btn-outline-success'>Calcular IMC</button>
+
+        <!-- resultado -->
+        <div id="resultado">
+        </div>
+    </div>
+
     <script type='text/javascript' src="js/functions.js"></script>
+    <script type='text/javascript' src="js/calculateIMC.js"></script>
 
 </body>
 

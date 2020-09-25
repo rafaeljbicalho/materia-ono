@@ -16,3 +16,22 @@
     margin-left: 44%;
     font-size: 12px !important;
 }
+
+.form-control {
+    width: 15% !important;
+}
+
+.inputs {
+    margin-left: 43%;
+    margin-top: 2%;
+}
+
+#botao {
+    font-size: 11px !important;
+    margin-left: 3%;
+}
+
+hr {
+    width: 40% !important;
+    margin-left: -12% !important;
+}
