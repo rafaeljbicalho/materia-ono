@@ -5,3 +5,7 @@ body {
 .bg-light {
     background-color: grey;
 }
+
+#resultado {
+    margin-left: -4% !important;
+}

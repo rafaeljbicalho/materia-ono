@@ -25,3 +25,8 @@ label {
 .navbar-light .navbar-brand {
     color: white;
 }
+
+#resultado {
+    color: white!important;
+    margin-left: -4%;
+}
