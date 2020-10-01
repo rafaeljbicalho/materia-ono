@@ -1,0 +1,27 @@
+body {
+    background-color: black !important;
+}
+
+P {
+    color: white !important;
+}
+
+ul {
+    color: white !important;
+}
+
+label {
+    color: white !important;
+}
+
+.form-control {
+    background-color: black !important;
+}
+
+.bg-light {
+    background-color: #306498!important;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}

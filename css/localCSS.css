@@ -9,7 +9,7 @@
 }
 
 .lista {
-    margin-left: 29%;
+    margin-left: 35%;
 }
 
 .botao {
@@ -22,7 +22,7 @@
 }
 
 .inputs {
-    margin-left: 43%;
+    margin-left: 45.5%;
     margin-top: 2%;
 }
 
@@ -34,4 +34,13 @@
 hr {
     width: 40% !important;
     margin-left: -12% !important;
+}
+
+.btn-outline-light {
+    color: #1a91ea !important;
+    border-color: #f8f9fa;
+}
+
+.mode {
+    margin-left: 0%;
 }

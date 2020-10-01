@@ -6,17 +6,21 @@
     <meta name="author" content="Rafael Bicalho">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADS | Rafael Bicalho</title>
+
     <!-- local CSS -->
-    <link rel="stylesheet" href="localCSS.css">
+    <link rel="stylesheet" href="css/localCSS.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- light-mode css -->
+    <link rel="stylesheet" href="css/light-mode.css" id="theme-link">
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">ADS | Análise e Desenvolvimento de Sistemas</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#">ADS | Desenvolvimento de sistema web</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,36 +28,42 @@
         </div>
     </nav>
     <!-- fim navbar -->
+    <p style="margin-left: 30%;margin-top: 3%;">Esta página tem como objetivo aplicar alguns dos conceitos e conhecimentos adquiridos até o momento, <br> sendo eles:</p>
 
     <!-- lista -->
-    <p style="margin-left: 23%;margin-top: 3%;">Até o momento estudados:</p>
     <div class='lista'>
         <ul>
             <li>Git</li>
-            <li>Html</li>
+            <li>HTML</li>
             <li>CSS</li>
-            <li>Javascript</li>
+            <li>JavaScript</li>
             <li>PHP</li>
         </ul>
     </div>
 
 
-    <p style='margin-left: 36%;margin-top: 4%;'>Clique no botão abaixo para alterar a cor do background.</p>
+    <p style='margin-left: 36%;margin-top: 4%;'>Clique em um dos botões abaixo para aplicar o dark-mode ou light-mode.</p>
 
-    <button class='btn btn-outline-primary botao' onclick="changeBackground()">Alterar background</button>
+    <div class="mode">
+        <button class="btn btn-outline-dark botao" id="dark">Dark-mode</button>
+
+        <button class="btn btn-outline-light botao" id="light" style="margin-left: 1%;">Light-mode</button>
+    </div>
+
 
     <!-- calcular imc -->
+    <p style='margin-left: 36%;margin-top: 4%;margin-bottom: -2%;'>Abaixo temos um simples cálculo do IMC (Índice de Massa Corpórea):</p><br>
     <div class='inputs'>
         <!-- peso -->
         <div class="form-group">
             <label for="formGroupExampleInput">Peso (kg)</label>
-            <input type="number" class="form-control" id="peso" placeholder="Ex: 80" required>
+            <input type="number" class="form-control" id="peso" placeholder="Ex: 80" max="300" min="0">
         </div>
 
         <!-- altura -->
         <div class="form-group">
             <label for="formGroupExampleInput">Altura (m)</label>
-            <input type="number" class="form-control" id="altura" placeholder="Ex: 1,75" required>
+            <input type="number" class="form-control" id="altura" placeholder="Ex: 1,75" max="300" min="0">
         </div>
 
         <!-- botão -->
@@ -64,8 +74,13 @@
         </div>
     </div>
 
+    <footer style='margin-left: 42%;margin-top: 4%;'>
+        <p>Desenvolvido por Rafael Bicalho, 2020</p>
+    </footer>
+
     <script type='text/javascript' src="js/functions.js"></script>
     <script type='text/javascript' src="js/calculateIMC.js"></script>
+    <script type='text/javascript' src="js/modes.js"></script>
 
 </body>
 
